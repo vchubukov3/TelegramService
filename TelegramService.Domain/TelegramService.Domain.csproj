@@ -15,4 +15,8 @@
     </ItemGroup>
 
 
+    <ItemGroup>
+      <ProjectReference Include="..\TelegramService.Shared\TelegramService.Shared.csproj" />
+    </ItemGroup>
+
 </Project>

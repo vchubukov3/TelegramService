@@ -197,6 +197,16 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "TelegramService.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/TelegramService.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TelegramService.Shared.dll": {}
+        }
       }
     }
   },
@@ -510,11 +520,17 @@
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "TelegramService.Shared/1.0.0": {
+      "type": "project",
+      "path": "../TelegramService.Shared/TelegramService.Shared.csproj",
+      "msbuildProject": "../TelegramService.Shared/TelegramService.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.EntityFrameworkCore >= 7.0.10"
+      "Microsoft.EntityFrameworkCore >= 7.0.10",
+      "TelegramService.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -543,7 +559,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Repository\\TelegramService\\TelegramService\\TelegramService.Shared\\TelegramService.Shared.csproj": {
+              "projectPath": "D:\\Repository\\TelegramService\\TelegramService\\TelegramService.Shared\\TelegramService.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

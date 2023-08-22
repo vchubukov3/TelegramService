@@ -7,7 +7,7 @@ public interface IProxyRepository
 {
     Task<IEnumerable<Proxy>> GetAllAsync();
 
-    Task<Proxy> GetByIdAsync();
+    Task<Proxy> GetByGuidAsync();
 
     Task AddAsync();
     

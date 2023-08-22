@@ -1,4 +1,4 @@
-namespace TelegramService.Domain.Enums;
+namespace TelegramService.Shared.Enums;
 
 public enum AccountStatus
 {

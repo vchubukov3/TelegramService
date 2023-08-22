@@ -1,4 +1,4 @@
-using TelegramService.Domain.Enums;
+using TelegramService.Shared.Enums;
 
 namespace TelegramService.Domain.Entities;
 

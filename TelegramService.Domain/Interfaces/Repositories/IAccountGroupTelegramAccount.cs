@@ -5,9 +5,9 @@ namespace TelegramService.Domain.Interfaces.Repositories;
 
 public interface IAccountGroupTelegramAccount
 {
-    Task<IEnumerable<AccountGroupTelegramAccount>> GetAllAsync();
+    Task<IEnumerable<AccountGroupTelegramAccountDto>> GetAllAsync();
 
-    Task<AccountGroupTelegramAccount> GetByIdAsync();
+    Task<AccountGroupTelegramAccountDto> GetByGuidAsync();
 
     Task AddAsync();
 

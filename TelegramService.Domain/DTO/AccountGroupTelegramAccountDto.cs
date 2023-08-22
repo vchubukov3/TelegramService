@@ -1,6 +1,6 @@
 namespace TelegramService.Domain.Entities;
 
-public class AccountGroupTelegramAccount
+public class AccountGroupTelegramAccountDto
 {
     public Guid AccountGroupId { get; set; }
     

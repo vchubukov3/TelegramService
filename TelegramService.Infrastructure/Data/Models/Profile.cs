@@ -1,13 +1,12 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using TelegramService.Infrastructure.Data.Enums;
-using TaskStatus = TelegramService.Infrastructure.Data.Enums.TaskStatus;
+using TelegramService.Shared.Enums;
 
 namespace TelegramService.Infrastructure.Data.Models;
 
-[Table("Tasks")]
-public class Task
+[Table("Profiles")]
+public class Profile
 {
     [Required]
     public Guid Id { get; set; }
@@ -18,10 +17,10 @@ public class Task
     public virtual User User { get; set; }
     
     [Required]
-    public TaskType TaskType { get; set; }
+    public ProfileType ProfileType { get; set; }
     
-    [DefaultValue(TaskStatus.NotStarted)]
-    public TaskStatus TaskStatus { get; set; }
+    [DefaultValue(ProfileStatus.NotStarted)]
+    public ProfileStatus ProfileStatus { get; set; }
     
     public MessageType MessageType {get; set;}
     

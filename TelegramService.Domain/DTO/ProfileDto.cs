@@ -1,17 +1,16 @@
-using TelegramService.Domain.Enums;
-using TaskStatus = TelegramService.Domain.Enums.TaskStatus;
+using TelegramService.Shared.Enums;
 
 namespace TelegramService.Domain.Entities;
 
-public class Task
+public class ProfileDto
 {
     public Guid Id { get; set; }
     
     public Guid UserId { get; set; }
     
-    public TaskType TaskType { get; set; }
+    public ProfileType ProfileType { get; set; }
     
-    public TaskStatus TaskStatus { get; set; }
+    public ProfileStatus ProfileStatus { get; set; }
     
     public MessageType MessageType { get; set; }
     

@@ -5,9 +5,9 @@ namespace TelegramService.Domain.Interfaces.Repositories;
 
 public interface IUserRepository
 {
-    Task<IEnumerable<User>> GetAllAsync();
+    Task<IEnumerable<UserDto>> GetAllAsync();
 
-    Task<User> GetByIdAsync();
+    Task<UserDto> GetByGuidAsync();
 
     Task AddAsync();
 

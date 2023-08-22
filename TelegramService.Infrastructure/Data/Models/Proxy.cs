@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using TelegramService.Infrastructure.Data.Enums;
+using TelegramService.Shared.Enums;
 
 namespace TelegramService.Infrastructure.Data.Models;
 

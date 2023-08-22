@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using TelegramService.Infrastructure.Data.Enums;
 using TelegramService.Infrastructure.Data.Models;
+using TelegramService.Shared.Enums;
 
 namespace TelegramService.Infrastructure.Data.Configuration;
 

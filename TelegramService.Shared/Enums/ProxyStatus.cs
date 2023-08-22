@@ -1,4 +1,4 @@
-namespace TelegramService.Infrastructure.Data.Enums;
+namespace TelegramService.Shared.Enums;
 
 public enum ProxyStatus
 {

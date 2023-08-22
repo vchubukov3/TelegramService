@@ -1,8 +1,8 @@
-using TelegramService.Domain.Enums;
+using TelegramService.Shared.Enums;
 
 namespace TelegramService.Domain.Entities;
 
-public class TelegramAccount
+public class TelegramAccountDto
 {
     public Guid Id { get; set; }
     
