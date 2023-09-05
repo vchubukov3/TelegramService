@@ -1,4 +1,4 @@
-using TelegramService.Domain.Entities;
+using TelegramService.Shared.DTO;
 using Task = System.Threading.Tasks.Task;
 
 namespace TelegramService.Domain.Interfaces.Repositories;

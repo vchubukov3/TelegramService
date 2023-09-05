@@ -1,12 +1,12 @@
 using TelegramService.Shared.Enums;
 
-namespace TelegramService.Domain.Entities;
+namespace TelegramService.Shared.DTO;
 
 public class TelegramAccountDto
 {
     public Guid Id { get; set; }
     
-    public Guid UserId { get; set; }
+    public string UserId { get; set; }
     
     public string AccountData { get; set; }
     

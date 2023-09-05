@@ -1,4 +1,4 @@
-namespace TelegramService.Domain.Entities;
+namespace TelegramService.Shared.DTO;
 
 public class AccountGroupTelegramAccountDto
 {

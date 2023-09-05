@@ -13,7 +13,7 @@ public class Proxy
     
     [Required]
     [ForeignKey("User")]
-    public User UserId { get; set; }
+    public string UserId { get; set; }
     
     public virtual User User { get; set; }
     
@@ -28,13 +28,16 @@ public class Proxy
     public ProxyType ProxyType {get; set; }
     
     [Required]
+    //[DefaultValue(ProxyStatus.NotChecked)]
+    public ProxyStatus ProxyStatus { get; set; }
+    
+    //[DefaultValue(false)]
+    public bool IsActivate { get; set; }
+    
+    [Required]
     public DateTimeOffset CreatedOn { get; set; }
     
     public DateTimeOffset UpdatedOn { get; set; }
-    
-    [Required]
-    [DefaultValue(ProxyStatus.NotChecked)]
-    public ProxyStatus ProxyStatus { get; set; }
     
     public virtual ICollection<TelegramAccount> TelegramAccounts { get; set; }
     

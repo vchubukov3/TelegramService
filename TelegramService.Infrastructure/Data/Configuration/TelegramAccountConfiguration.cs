@@ -9,20 +9,6 @@ public class TelegramAccountConfiguration : IEntityTypeConfiguration<TelegramAcc
 {
     public void Configure(EntityTypeBuilder<TelegramAccount> builder)
     {
-        builder.ToTable("TelegraamAccounts");
-        builder.HasKey(t => t.Id);
-        builder.Property(t => t.AccountData).IsRequired();
-        builder.Property(t => t.CreatedOn).IsRequired();
-        builder.Property(t => t.Status).IsRequired().HasDefaultValue(AccountStatus.NotChecked);
-        
-        builder.HasOne(t => t.User)
-            .WithMany()
-            .HasForeignKey(t => t.UserId)
-            .OnDelete(DeleteBehavior.Restrict);
-
-        builder.HasOne(t => t.Proxy)
-            .WithMany()
-            .HasForeignKey(t => t.ProxyId)
-            .OnDelete(DeleteBehavior.Restrict);
+        builder.ToTable("TelegramAccounts");
     }
 }

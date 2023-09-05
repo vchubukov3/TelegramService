@@ -1,12 +1,12 @@
-using Microsoft.EntityFrameworkCore;
+using TelegramService.Shared.DTO;
 
 namespace TelegramService.Domain.Interfaces.Repositories;
 
 public interface IProfileRepository
 {
-    Task<IEnumerable<Entities.ProfileDto>> GetAllAsync();
+    Task<IEnumerable<ProfileDto>> GetAllAsync();
 
-    Task<Entities.ProfileDto> GetByGuidAsync();
+    Task<ProfileDto> GetByGuidAsync();
 
     Task AddAsync();
 

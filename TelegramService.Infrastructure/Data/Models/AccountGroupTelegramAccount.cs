@@ -7,12 +7,12 @@ namespace TelegramService.Infrastructure.Data.Models;
 public class AccountGroupTelegramAccount
 {
     [Required]
-    public AccountGroup AccountGroupId { get; set; }
+    public Guid AccountGroupId { get; set; }
     
-    public virtual AccountGroup AccountGroup { get; set; }
+    //public virtual AccountGroup AccountGroup { get; set; }
     
     [Required]
-    public TelegramAccount TelegramAccountId { get; set; }
+    public Guid TelegramAccountId { get; set; }
     
-    public virtual TelegramAccount TelegramAccount { get; set; }
+    //public virtual TelegramAccount TelegramAccount { get; set; }
 }

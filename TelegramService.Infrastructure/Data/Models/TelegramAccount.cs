@@ -13,7 +13,7 @@ public class TelegramAccount
     
     [Required]
     [ForeignKey("User")]
-    public User UserId { get; set; }
+    public string UserId { get; set; }
     
     public virtual User User { get; set; }
     
@@ -21,7 +21,7 @@ public class TelegramAccount
     public string AccountData { get; set; }
     
     [Required]
-    public Proxy ProxyId { get; set; }
+    public Guid ProxyId { get; set; }
     
     public virtual Proxy Proxy { get; set; }
     

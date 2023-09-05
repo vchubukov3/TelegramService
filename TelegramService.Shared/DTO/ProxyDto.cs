@@ -1,12 +1,12 @@
 using TelegramService.Shared.Enums;
 
-namespace TelegramService.Domain.Entities;
+namespace TelegramService.Shared.DTO;
 
-public class Proxy
+public class ProxyDto
 {
     public Guid Id { get; set; }
 
-    public Guid UserId { get; set; }
+    public string UserId { get; set; }
     
     public string Address { get; set; }
     
@@ -14,9 +14,11 @@ public class Proxy
     
     public ProxyType ProxyType { get; set; }
     
+    public ProxyStatus ProxyStatus { get; set; }
+    
+    public bool IsActivate { get; set; }
+    
     public DateTimeOffset CreatedOn { get; set; }
     
     public DateTimeOffset UpdatedOn { get; set; }
-    
-    public ProxyStatus ProxyStatus { get; set; }
 }

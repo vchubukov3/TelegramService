@@ -9,12 +9,6 @@ public class AccountGroupTelegramAccountConfiguration : IEntityTypeConfiguration
     public void Configure(EntityTypeBuilder<AccountGroupTelegramAccount> builder)
     {
         builder.ToTable("AccountGroupTelegramAccounts");
-        builder.HasOne(a => a.AccountGroup)
-            .WithMany()
-            .HasForeignKey(a => a.AccountGroupId);
-        
-        builder.HasOne(a => a.TelegramAccountId)
-            .WithMany()
-            .HasForeignKey(a => a.TelegramAccountId);
+        builder.HasKey(agta => new { agta.AccountGroupId, agta.TelegramAccountId });
     }
 }
